@@ -17,7 +17,7 @@ def get_text_messages(message):
     elif "видео" in message.text.lower():
         bot.send_message(message.from_user.id, f"Где видео {message.chat.first_name}, https://www.youtube.com/@bananus7452")
     elif "погода" in message.text.lower():
-        bot.send_message(message.from_user.id, f"Температура в Новосибирске составляет - {temp.text}\n{weather.text}")
+        bot.send_message(message.from_user.id, f"Температура в Новосибирске составляет {temp.text}\n{weather.text}")
     else:
         bot.send_message(message.from_user.id, "Я тебя не понимаю. Напиши /help.")
 
